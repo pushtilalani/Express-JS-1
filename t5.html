@@ -1,0 +1,27 @@
+<!-- create one html file  which contains two number type input . then one dropdown list which conatin option like 
+addition,substraction,multiplication and division.The input field must cont val gre than zero else it will give 
+mess enter valid number. now also user must sele form from the dropdown else give a mess you have not selected 
+any form, mess will disp on -calcy page.if formula is selected and numbers are entered then respective calculatio 
+will be perform on -calcy page . use post method. -->
+
+
+
+<html>
+    <body>
+        <form action="/calcy" method="post">
+            N1: <input type="number" name="n1">
+            <br>
+            N2: <input type="number" name="n2">    
+            <br>
+                Select:<select name="formula">
+                    <option value="select">--select--</option>
+                    <option value="add">add</option>
+                    <option value="sub">sub</option>
+                    <option value="mul">mul</option>
+                    <option value="div">div</option>
+                </select>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
